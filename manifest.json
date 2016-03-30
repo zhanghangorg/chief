@@ -12,13 +12,13 @@
 		"128":"imgs/128.png"
 	},
 	"web_accessible_resources" : [
-		"js/my.js"
+		"js/chief.js"
 	],
 	"content_scripts" : [
 		{
 			"matches" : ["http://*/*", "https://*/*"],
 			// "css" : ["css/my.css"],
-			"js" : ["js/my.js"]
+			"js" : ["js/chief.js"]
 		}
 	]
 	// "browser_action" : {
